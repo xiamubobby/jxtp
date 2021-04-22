@@ -7,7 +7,7 @@ plugins {
 }
 
 group = "org.rationalityfrontline"
-version = "2.2.27.4-1.0.0"
+version = "2.2.27.4-1.1.0"
 val NAME = project.name
 val DESC = "Java wrapper for XTP"
 val GITHUB_REPO = "RationalityFrontline/jxtp"
@@ -51,6 +51,10 @@ tasks {
         from("../lib") {
             include("*.so")
             into("natives/linux_64")
+        }
+        from("../lib") {
+            include("*.dylib")
+            into("natives/osx_64")
         }
     }
     withType(Javadoc::class.java) {
