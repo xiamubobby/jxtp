@@ -4,6 +4,5 @@
 cpp/src/jxtp.*
 lib/jxtp.dll
 lib/libjxtp.so
-lib/libjxtp.dylib
 *.java
 !module-info.java
